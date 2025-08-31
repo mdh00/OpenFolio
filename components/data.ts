@@ -41,7 +41,7 @@ export const projects = [
 
 export const user = {
   name: "Emy Coligado",
-  email: "madhini00@gmail.com",
+  email: process.env.SMTP_USER,
   linkedinUrl: "https://linkedin.com/in/emycoligado",
   linkedinUsername: "emycoligado",
   bio:
