@@ -41,7 +41,7 @@ export const projects = [
 
 export const user = {
   name: "Emy Coligado",
-  email: "yourname@example.com",
+  email: "madhini00@gmail.com",
   linkedinUrl: "https://linkedin.com/in/emycoligado",
   linkedinUsername: "emycoligado",
   bio:
