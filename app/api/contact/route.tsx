@@ -17,9 +17,8 @@ export async function POST(request: NextRequest) {
 
     // Send email using Nodemailer
     const nodemailer = require("nodemailer");
-    const { user } = require("@/components/data");
 
-    const transporter = nodemailer.createTransport({
+    const transporter = nodemailer.createTransporter({
       service: "gmail",
       auth: {
         user: process.env.SMTP_USER,
@@ -29,7 +28,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: email,
-      to: user.email,
+      to: "madhini00@gmail.com", // ✅ Hardcoded email
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>
