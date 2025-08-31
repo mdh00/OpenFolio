@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -136,7 +137,7 @@ export default function ContactSection({
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-accent" />
-                    <span className="text-foreground">{user.email}</span>
+                    <span className="text-foreground">{user?.email || "your.email@example.com"}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Linkedin className="h-5 w-5 text-accent" />

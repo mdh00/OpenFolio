@@ -3,13 +3,6 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
-import { ChevronLeft, ChevronRight, Github, ExternalLink, Mail, Linkedin, Menu, X, Send } from "lucide-react"
 import { skills, projects, user } from "@/components/data"
 
 import HeaderNav from "@/components/HeaderNav"
@@ -20,7 +13,6 @@ import ContactSection from "@/components/ContactSection"
 
 export default function Portfolio() {
   const [currentProject, setCurrentProject] = useState(0)
-  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [contactForm, setContactForm] = useState({
     name: "",
